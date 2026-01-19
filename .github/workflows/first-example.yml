@@ -1,0 +1,22 @@
+name: First-Workflow
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcome Message
+              run:  echo "Hello, welcome to your first GitHub Actions workflow!"
+            
+            - name: Show Current Directory
+              run: pwd
+            
+            - name: List Files
+              run: ls -la
+
+            - name: Display Date and Time
+              run: date
+
+            - name: Read File
+              run: cat README.md
